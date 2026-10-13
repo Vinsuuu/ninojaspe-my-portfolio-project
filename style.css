@@ -319,5 +319,72 @@ form button {
 form button:hover {
   background-color: #1a252f;
 }
-  background-color: rgba(255, 255, 255, 0.12);
+
+/* ===== Responsive design ===== */
+
+img {
+  max-width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .nav-links a {
+    padding: 10px 8px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  #about,
+  #experience {
+    padding: 40px 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  form {
+    width: 100%;
+  }
 }
